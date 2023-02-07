@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navigation nav-cate">
+        <div class="wrap-logo">
+          <a class="logo" href="index.html" title="Báo Pháp Luật TP. Hồ Chí Minh"> </a>
+        </div>
+        <ul class="menu">
+          <li class="main"><a href="gioithieu.html">Giới thiệu</a></li>
+          <li class="main"><a href="chuyen-muc.html">Chuyện ra khơi</a></li>
+          <li class="main"><a href="chuyen-muc.html">Đèn trên biển</a></li>
+          <li class="main"><a href="chuyen-muc.html">Tin tức</a></li>
+        </ul>
+        <div class="buttons">
+          <div class="icon search">
+            <svg class="h-24" viewBox="0 0 24 24">
+              <path
+                d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+              ></path>
+            </svg>
+          </div>
+          <div class="icon login">
+            <svg class="h-24" viewBox="0 0 24 24">
+              <path
+                d="M11 7 9.6 8.4l2.6 2.6H2v2h10.2l-2.6 2.6L11 17l5-5-5-5zm9 12h-8v2h8c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-8v2h8v14z"
+              ></path>
+            </svg>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="wrap-introduce page-cate">
+      <div class="box-tophead">
+        <div class="title-cate">Hỏi đáp</div>
+      </div>
+    </div>
+    <div class="wrap-form">
+      <div class="container">
+        <div class="box-form">
+          <form action="form" class="form-ground">
+            <div class="form-item">
+              <label for="name"> Họ tên <span>*</span> </label>
+              <input
+                type="text"
+                id="name"
+                formcontrolname="name"
+                class="form-control ng-untouched ng-pristine ng-invalid"
+                placeholder="Tên"
+                fdprocessedid="njzzoc"
+              />
+            </div>
+            <div class="form-item">
+              <label for="name">Số điện thoại <span>*</span> </label>
+              <input
+                type="text"
+                id="name"
+                formcontrolname="name"
+                class="form-control ng-untouched ng-pristine ng-invalid"
+                placeholder="Số điện thoại"
+                fdprocessedid="njzzoc"
+              />
+            </div>
+            <div class="form-item">
+              <label for="name"> Email <span>*</span> </label>
+              <input
+                type="text"
+                id="name"
+                formcontrolname="name"
+                class="form-control ng-untouched ng-pristine ng-invalid"
+                placeholder="Email"
+                fdprocessedid="njzzoc"
+              />
+            </div>
+            <div class="form-item">
+              <label for="name"> Câu hỏi </label>
+              <textarea
+                id="note"
+                formcontrolname="note"
+                class="form-control ng-untouched ng-pristine ng-valid"
+                placeholder="Đặt câu hỏi"
+              ></textarea>
+            </div>
+            <div class="form-item">
+              <label for="captcha"> ReCaptcha <span>*</span></label>
+              <re-captcha formcontrolname="captcha_response" id="ngrecaptcha-0" class="captcha"
+                ><div style="width: 304px; height: 78px">
+                  <div>
+                    <iframe
+                      title="reCAPTCHA"
+                      src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6Le9O-AZAAAAAHQthO8FdL9DV9DN-tCqwOjMmsyG&amp;co=aHR0cHM6Ly93d3cudmlldHNlZWRzLm9yZzo0NDM.&amp;hl=vi&amp;v=gEr-ODersURoIfof1hiDm7R5&amp;size=normal&amp;cb=rizpzm5qkh7"
+                      width="304"
+                      height="78"
+                      role="presentation"
+                      name="a-mwf56ve3ti44"
+                      frameborder="0"
+                      scrolling="no"
+                      sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"
+                    ></iframe>
+                  </div>
+                  <textarea
+                    id="g-recaptcha-response"
+                    name="g-recaptcha-response"
+                    class="g-recaptcha-response"
+                    style="
+                      width: 250px;
+                      height: 40px;
+                      border: 1px solid rgb(193, 193, 193);
+                      margin: 10px 25px;
+                      padding: 0px;
+                      resize: none;
+                      display: none;
+                    "
+                  ></textarea>
+                </div>
+                <iframe style="display: none"></iframe
+              ></re-captcha>
+            </div>
+            <input type="submit" value="Gửi câu hỏi" style="margin: 40px auto; display: block" />
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="wrap-footer">
+        <div class="box-logo">
+          <div class="logo"></div>
+          <div class="copy-right">
+            <p>© Báo điện tử Pháp Luật thành phố Hồ Chí Minh</p>
+            <p>Giấy phép số: 636/GP-BTTTT của Bộ Thông tin và Truyền thông cấp ngày 28-12-2020</p>
+            <p>Cơ quan chủ quản: Ủy ban Nhân dân Thành phố Hồ Chí Minh</p>
+            <p>Tổng biên tập: Mai Ngọc Phước</p>
+            <p>Website: https://plo.vn</p>
+            <p>Pháp Luật TP.HCM giữ bản quyền nội dung trên Website này.</p>
+            <p>Cấm sao chép dưới mọi hình thức nếu không có sự chấp thuận bằng văn bản.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
