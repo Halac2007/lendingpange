@@ -15,7 +15,7 @@
   height: 33px;
   width: 100%;
   z-index: 1;
-  top: 33%;
+  top: 30%;
 }
 
 .wrap-introduce.page-cate::before {
@@ -99,17 +99,16 @@
   margin: auto;
 }
 .wrap-organizing .box-head {
-  display: flex;
-
-  row-gap: 20px;
   padding: 40px 0px;
 }
 .wrap-organizing .box-head .title-cate {
   flex: 1;
   display: flex;
   align-items: center;
+  justify-content: center;
 
   column-gap: 20px;
+  padding: 20px 0px;
 }
 
 .wrap-organizing .box-head .title-cate h4 {

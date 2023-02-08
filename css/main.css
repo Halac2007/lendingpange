@@ -471,12 +471,16 @@ header nav ul ul li a:hover {
   zoom: 1;
   transition: all 0.3s ease-in-out;
 }
-
+.wrap-slider .box-left .text-des .btn-more a {
+  color: #fff;
+}
 .wrap-slider .box-left .text-des .btn-more:hover {
   border-radius: 15px 0 15px 0;
   background: #efbb1b;
 }
-
+.wrap-slider .box-left .text-des .btn-more:hover a {
+  color: #fff;
+}
 /*----------*/
 .wrap-map {
   width: 100%;
