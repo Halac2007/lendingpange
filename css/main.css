@@ -57,7 +57,7 @@
   height: 33px;
   width: 100%;
   z-index: 1;
-  top: 38%;
+  top: 23%;
 }
 .border-bottom-page {
   background: url(../img/boder-bottom.png);
@@ -68,7 +68,7 @@
   height: 33px;
   width: 100%;
   z-index: 1;
-  top: 31%;
+  top: 23%;
 }
 .border-bottom-detail {
   background: url(../img/boder-bottom.png);
@@ -492,7 +492,7 @@ header nav ul ul li a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
+
   row-gap: 20px;
   column-gap: 60px;
 }
@@ -936,8 +936,15 @@ header nav ul ul li a:hover {
 .footer .wrap-footer .box-logo .copy-right {
   text-align: center;
 }
+
 /*--------------------------*/
-@media only screen and (min-width: 1300px) {
+@media only screen and (max-width: 1400px) {
+  .border-bottom-page {
+    top: 24%;
+  }
+  .border-bottom-cate {
+    top: 30%;
+  }
 }
 @media only screen and (max-width: 1200px) {
   .container {
@@ -977,12 +984,6 @@ header nav ul ul li a:hover {
   }
   .wrap-listnews .box-list .story .title {
     flex: 1.5;
-  }
-  .border-bottom-cate {
-    top: 30%;
-  }
-  .border-bottom-page {
-    top: 24%;
   }
 }
 @media only screen and (max-width: 992px) {
@@ -1086,10 +1087,10 @@ header nav ul ul li a:hover {
     border-radius: 0px;
   }
   .border-bottom-cate {
-    top: 49%;
+    top: 33%;
   }
   .border-bottom-page {
-    top: 43%;
+    top: 33%;
   }
   .border-bottom-detail {
     top: 26%;
@@ -1226,9 +1227,7 @@ header nav ul ul li a:hover {
   .panel-show .wrap-bg .text-content {
     top: 50%;
   }
-  .border-bottom-cate {
-    top: 178%;
-  }
+
   h4 {
     font-size: 1.5rem;
   }
@@ -1284,8 +1283,22 @@ header nav ul ul li a:hover {
     font-size: 1.2rem !important;
   }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 390px) {
   .border-bottom {
-    bottom: 183px;
+    bottom: 149px;
+  }
+  .wrap-introduce .box-tophead {
+    padding: 0px 0px 0px;
+  }
+  .page-home .box-intro .icon {
+    border-radius: 0px;
+  }
+  .page-home .box-intro .icon {
+    width: 67px;
+    height: 60px;
+    padding: 0px;
+  }
+  .page-home .box-intro {
+    padding: 0px 20px;
   }
 }
