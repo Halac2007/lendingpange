@@ -657,7 +657,7 @@ header nav ul ul li a:hover {
 
 .wrap-slider .slideshow-container {
   position: relative;
-  background: #0096bb29;
+  background: #00497917;
 }
 .wrap-slider .mySlides {
   display: flex;
@@ -707,6 +707,88 @@ header nav ul ul li a:hover {
   }
 }
 /*----------*/
+.wrap-mapvietnam {
+  width: 100%;
+  padding: 20px 0px;
+}
+.wrap-mapvietnam .body-map {
+  display: flex;
+  align-items: center;
+  background: rgba(0, 73, 121, 0.09);
+  padding: 20px;
+}
+.wrap-mapvietnam .body-map .map-vn {
+  flex: 1;
+}
+.wrap-mapvietnam .body-map .map-vn img {
+  width: 100%;
+}
+.wrap-mapvietnam .body-map .map-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 40px;
+}
+.wrap-mapvietnam .body-map .text-map {
+  flex: 1;
+  padding: 20px;
+}
+.wrap-mapvietnam .body-map .btn-more {
+  border-radius: 15px 0 15px 0;
+  background: #0096bb;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 700;
+  letter-spacing: 1.3px;
+  line-height: 1;
+  min-height: 50px;
+  outline: none;
+  padding: 18px 25px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  zoom: 1;
+  transition: all 0.3s ease-in-out;
+}
+.wrap-mapvietnam .body-map .text-map h3 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: rgb(0, 150, 187);
+}
+
+.wrap-mapvietnam .body-map .text-map .sapo {
+  font-size: 1.5rem;
+  color: rgb(0, 150, 187);
+}
+.number-address {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  column-gap: 250px;
+}
+
+.number-address .add-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.number-address .add-item .number {
+  font-size: 5.5rem;
+  color: #e74c3c;
+  font-weight: 700;
+}
+
+.number-address .add-item .text-number {
+  font-size: 2rem;
+  color: rgb(0, 150, 187);
+  font-weight: 700;
+}
+/*-----------*/
+
 .wrap-map {
   width: 100%;
   padding: 20px 0px;
@@ -723,10 +805,9 @@ header nav ul ul li a:hover {
   padding: 30px 0px;
 }
 .show-map {
-  background: url(../img/bg-map.jpg) top left no-repeat;
+  background: url(../img/bg-mapvn.png) top left no-repeat;
   background-size: cover;
   padding: 50px 0;
-  position: relative;
 
   border-radius: 10px;
 }
@@ -985,6 +1066,10 @@ header nav ul ul li a:hover {
   .wrap-listnews .box-list .story .title {
     flex: 1.5;
   }
+  .wrap-mapvietnam .body-map {
+    display: flex;
+    flex-direction: column;
+  }
 }
 @media only screen and (max-width: 992px) {
   .page-home .box-intro .icon {
@@ -1094,6 +1179,15 @@ header nav ul ul li a:hover {
   }
   .border-bottom-detail {
     top: 26%;
+  }
+  .number-address {
+    column-gap: 50px;
+  }
+  .number-address .add-item .number {
+    font-size: 4rem;
+  }
+  .number-address .add-item .text-number {
+    font-size: 1.5rem;
   }
 }
 @media only screen and (max-width: 600px) {
