@@ -1290,6 +1290,15 @@ header nav ul ul li a:hover {
   .wrap-mapvietnam .body-map .text-map {
     text-align: center;
   }
+  .wrap-mapvietnam .body-map .text-map h3 {
+    font-size: 1.5rem !important;
+  }
+  .wrap-mapvietnam .body-map .text-map .sapo {
+    font-size: 1.2rem !important;
+  }
+  .number-address .add-item .text-number {
+    text-align: center;
+  }
 }
 @media only screen and (max-width: 480px) {
   .container {
