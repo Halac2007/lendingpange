@@ -1287,6 +1287,9 @@ header nav ul ul li a:hover {
   .box-timeline .content h2 {
     font-size: 1.2rem !important;
   }
+  .wrap-mapvietnam .body-map .text-map {
+    text-align: center;
+  }
 }
 @media only screen and (max-width: 480px) {
   .container {
