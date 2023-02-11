@@ -48,23 +48,3 @@ document.addEventListener('DOMContentLoaded', () => {
   counter('count2', 90, 4, 1500)
   counter('count3', 90, 5, 1500)
 })
-
-/*------backtotop-------------*/
-let mybutton = document.getElementById('backtop')
-
-window.onscroll = function () {
-  scrollFunction()
-}
-
-function scrollFunction() {
-  if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
-    mybutton.style.display = 'block'
-  } else {
-    mybutton.style.display = 'none'
-  }
-}
-
-function topFunction() {
-  document.body.scrollTop = 0
-  document.documentElement.scrollTop = 0
-}
