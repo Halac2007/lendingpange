@@ -44,7 +44,27 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       }, step)
   }
-  counter('count1', 90, 15, 2500)
-  counter('count2', 90, 4, 2500)
-  counter('count3', 90, 5, 2500)
+  counter('count1', 90, 15, 1500)
+  counter('count2', 90, 4, 1500)
+  counter('count3', 90, 5, 1500)
 })
+
+/*------backtotop-------------*/
+let mybutton = document.getElementById('backtop')
+
+window.onscroll = function () {
+  scrollFunction()
+}
+
+function scrollFunction() {
+  if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+    mybutton.style.display = 'block'
+  } else {
+    mybutton.style.display = 'none'
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0
+  document.documentElement.scrollTop = 0
+}

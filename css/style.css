@@ -224,6 +224,9 @@
   zoom: 1;
   transition: all 0.3s ease-in-out;
 }
+.wrap-pagecate .wr-articles .btn-more a {
+  color: #fff;
+}
 .wrap-pagecate .wr-articles .btn-more:hover {
   border-radius: 15px 0 15px 0;
   background: #efbb1b;
