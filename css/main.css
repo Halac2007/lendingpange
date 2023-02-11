@@ -1370,13 +1370,20 @@ header nav ul ul li a:hover {
     row-gap: 10px;
   }
   .page-home .box-topic {
-    max-width: 400px;
+    max-width: 370px;
     margin: auto;
   }
   .page-home .box-intro .icon {
-    width: 90px;
+    width: 80px;
     height: 80px;
     padding: 9px;
+    border-radius: 0px 0px 0px;
+  }
+  .page-home .box-intro .title {
+    text-align: center;
+  }
+  .page-home .box-intro {
+    align-items: baseline;
   }
   .box-topic .h-24 {
     height: 50px;
