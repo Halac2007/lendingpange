@@ -1625,6 +1625,7 @@ header nav ul ul li a:hover {
   }
   .demo2 .wrap-slider .text-des {
     order: 2;
+    text-align: center;
   }
   .demo2 .wrap-slider .custom-arrows {
     top: 23%;
@@ -1684,7 +1685,7 @@ header nav ul ul li a:hover {
     height: 50px;
   }
   .wrap-listnews {
-    max-width: 400px;
+    max-width: 350px;
   }
   .wrap-listnews .box-list .story .title p {
     display: none;
