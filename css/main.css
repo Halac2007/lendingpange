@@ -193,13 +193,25 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 50px;
 }
+
 .box-focus .focus-content .thumb {
-  flex: 1;
+  flex: 1.5;
+  -webkit-mask-image: url(../img/bg-ico.png);
+  mask-image: url(../img/bg-ico.png);
+  -webkit-mask-size: 70%;
+  mask-size: 70%;
+  object-fit: cover;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+
+.box-focus .focus-content .thumb img {
+  width: 100%;
 }
 .box-focus .focus-content .title-focus {
   flex: 1;
+  margin-left: -20%;
 }
 .box-focus .focus-content .thumb img {
   width: 100%;
@@ -814,7 +826,7 @@ header nav ul ul li a:hover {
 /*--------------*/
 
 .wrap-slider {
-  width: 95%;
+  width: 100%;
 
   margin: auto;
 }
@@ -987,6 +999,13 @@ header nav ul ul li a:hover {
   }
 }
 /*----------*/
+.wrap-mapvietnam.demo2 {
+  width: 90%;
+  margin: auto;
+}
+.wrap-mapvietnam.demo2 .body-map {
+  border-radius: 15px;
+}
 .wrap-mapvietnam {
   width: 100%;
   padding: 20px 0px;
@@ -1492,6 +1511,9 @@ header nav ul ul li a:hover {
   }
   .border-bottom-cate {
     top: 214px;
+  }
+  .box-focus .focus-content .title-focus {
+    margin-left: 0px;
   }
 }
 @media only screen and (max-width: 600px) {
