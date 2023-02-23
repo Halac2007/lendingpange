@@ -129,10 +129,7 @@
   color: #202020;
   line-height: 1.5;
 }
-.demo2 .title-cate h4 a {
-  color: #202020 !important;
-  font-family: 'Montserrat', sans-serif;
-}
+
 .menu-head .navigation {
   border-bottom: 1px solid #696a6c7d;
   width: 100%;
@@ -807,7 +804,7 @@ header nav ul ul li a:hover {
 .page-home .box-topic .title-cate {
   position: relative;
   width: 100%;
-  border-top: 2px solid rgb(0, 150, 187);
+  /* border-top: 2px solid rgb(0, 150, 187); */
 }
 .page-home .box-topic .title-cate h4 {
   font-weight: 700;
@@ -824,7 +821,19 @@ header nav ul ul li a:hover {
   background: rgb(255, 255, 255);
 }
 .title-cate h4 a {
-  color: rgb(0, 150, 187);
+  --c: #1095c1;
+  --s: 0.15em;
+
+  line-height: 1.1em;
+  padding-bottom: calc(2.1 * var(--s));
+  background: conic-gradient(from 135deg at top, var(--c) 90deg, #0000 0) left 0 bottom var(--s) / calc(2 * var(--s)) var(--s) repeat-x,
+    conic-gradient(from -45deg at bottom, var(--c) 90deg, #0000 0) left var(--s) bottom 0 / calc(2 * var(--s)) var(--s) repeat-x;
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0) 0 / var(--_p, 0%) padding-box no-repeat;
+  transition: 0.5s;
+}
+.title-cate h4 a:hover {
+  --_p: 100%;
+  color: var(--c);
 }
 .page-home .box-intro {
   display: flex;
@@ -946,27 +955,43 @@ header nav ul ul li a:hover {
 }
 
 .wrap-slider .text-des .btn-more {
-  border-radius: 15px 0 15px 0;
-  background: #0096bb;
+  background-color: #004a7f;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
   border: none;
-  color: #fff;
+  color: #ffffff;
   cursor: pointer;
   display: inline-block;
-  font-weight: 700;
-  letter-spacing: 1.3px;
-  line-height: 1;
-  max-height: 40px;
-  outline: none;
-  padding: 11px 25px;
+  font-family: Arial;
+  font-size: 20px;
+  padding: 15px 12px;
   text-align: center;
   text-decoration: none;
-  text-transform: uppercase;
-  zoom: 1;
-  transition: all 0.3s ease-in-out;
+  -webkit-animation: glowing 1500ms infinite;
+  -moz-animation: glowing 1500ms infinite;
+  -o-animation: glowing 1500ms infinite;
+  animation: glowing 1500ms infinite;
 }
 .wrap-slider .text-des .btn-more a {
   color: #fff;
+  font-weight: 700;
 }
+
+@keyframes glowing {
+  0% {
+    background-color: #0096bb;
+    box-shadow: 0 0 3px #0096bb;
+  }
+  50% {
+    background-color: #0096bb;
+    box-shadow: 0 0 40px #0096bb;
+  }
+  100% {
+    background-color: #0096bb;
+    box-shadow: 0 0 3px #0096bb;
+  }
+}
+
 .wrap-slider .text-des .btn-more:hover {
   border-radius: 15px 0 15px 0;
   background: #efbb1b;
@@ -1096,24 +1121,24 @@ header nav ul ul li a:hover {
   padding: 20px;
 }
 .wrap-mapvietnam .body-map .btn-more {
-  border-radius: 15px 0 15px 0;
-  background: #0096bb;
+  background-color: #004a7f;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
   border: none;
-  color: #fff;
+  color: #ffffff;
   cursor: pointer;
   display: inline-block;
-  font-weight: 700;
-  letter-spacing: 1.3px;
-  line-height: 1;
-  min-height: 50px;
-  outline: none;
-  padding: 18px 25px;
+  font-family: Arial;
+  font-size: 20px;
+  padding: 15px 12px;
   text-align: center;
   text-decoration: none;
-  text-transform: uppercase;
-  zoom: 1;
-  transition: all 0.3s ease-in-out;
+  -webkit-animation: glowing 1500ms infinite;
+  -moz-animation: glowing 1500ms infinite;
+  -o-animation: glowing 1500ms infinite;
+  animation: glowing 1500ms infinite;
 }
+
 .wrap-mapvietnam .body-map .text-map h3 {
   font-size: 1.5rem;
   text-transform: uppercase;
@@ -1122,6 +1147,7 @@ header nav ul ul li a:hover {
 
 .wrap-mapvietnam .body-map .btn-more a {
   color: #fff;
+  font-weight: 700;
 }
 
 .wrap-mapvietnam .body-map .text-map .sapo {
