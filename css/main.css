@@ -393,18 +393,18 @@
 }
 .box-topic .h-24 {
   height: 111px;
-  fill: rgb(0, 150, 187);
+  fill: #017ec6;
 }
 .icon-svg {
   width: 50%;
   height: 24px;
-  fill: rgb(0, 150, 187);
+  fill: #017ec6;
 }
 .wrap-organizing .h-24,
 .wrap-companion .h-24,
 .wrap-body .h-24 {
   height: 50px;
-  fill: rgb(0, 150, 187);
+  fill: #017ec6;
 }
 .icon {
   cursor: pointer;
@@ -783,7 +783,7 @@ header nav ul ul li a:hover {
   color: #00beb8;
 }
 .panel-show .wrap-bg .text-content .btn-center:hover {
-  background: rgb(0, 150, 187);
+  background: #017ec6;
 }
 .panel-show .wrap-bg .text-content .btn-center:hover a {
   color: #ffff;
@@ -804,7 +804,7 @@ header nav ul ul li a:hover {
 .page-home .box-topic .title-cate {
   position: relative;
   width: 100%;
-  /* border-top: 2px solid rgb(0, 150, 187); */
+  /* border-top: 2px solid #017EC6; */
 }
 .page-home .box-topic .title-cate h4 {
   font-weight: 700;
@@ -821,7 +821,7 @@ header nav ul ul li a:hover {
   background: rgb(255, 255, 255);
 }
 .title-cate h4 a {
-  --c: #1095c1;
+  --c: #017ec6;
   --s: 0.15em;
 
   line-height: 1.1em;
@@ -862,7 +862,7 @@ header nav ul ul li a:hover {
   text-align: center;
 }
 .page-home .box-intro .icon {
-  border: 2px solid rgb(0, 150, 187);
+  border: 2px solid #017ec6;
   width: 300px;
   height: 180px;
   border-radius: 10px 40px 10px;
@@ -874,14 +874,14 @@ header nav ul ul li a:hover {
 }
 
 .page-home .box-intro .icon:hover {
-  background: rgb(0, 150, 187);
+  background: #017ec6;
 }
 .page-home .box-intro .icon:hover svg {
   fill: #fff;
 }
 .page-home .box-intro .title a {
   text-transform: uppercase;
-  color: rgb(0, 150, 187);
+  color: #017ec6;
   font-weight: 600;
 }
 .page-home .box-intro .box-letter,
@@ -955,7 +955,7 @@ header nav ul ul li a:hover {
 }
 
 .wrap-slider .text-des .btn-more {
-  background-color: #004a7f;
+  background-color: #017ec6;
   -webkit-border-radius: 10px;
   border-radius: 10px;
   border: none;
@@ -979,16 +979,16 @@ header nav ul ul li a:hover {
 
 @keyframes glowing {
   0% {
-    background-color: #0096bb;
-    box-shadow: 0 0 3px #0096bb;
+    background-color: #017ec6;
+    box-shadow: 0 0 3px #017ec6;
   }
   50% {
-    background-color: #0096bb;
-    box-shadow: 0 0 40px #0096bb;
+    background-color: #017ec6;
+    box-shadow: 0 0 40px #017ec6;
   }
   100% {
-    background-color: #0096bb;
-    box-shadow: 0 0 3px #0096bb;
+    background-color: #017ec6;
+    box-shadow: 0 0 3px #017ec6;
   }
 }
 
@@ -1142,7 +1142,7 @@ header nav ul ul li a:hover {
 .wrap-mapvietnam .body-map .text-map h3 {
   font-size: 1.5rem;
   text-transform: uppercase;
-  color: rgb(0, 150, 187);
+  color: #017ec6;
 }
 
 .wrap-mapvietnam .body-map .btn-more a {
@@ -1152,7 +1152,7 @@ header nav ul ul li a:hover {
 
 .wrap-mapvietnam .body-map .text-map .sapo {
   font-size: 1.3rem;
-  color: rgb(0, 150, 187);
+  color: #017ec6;
 }
 .number-address {
   display: flex;
@@ -1176,7 +1176,7 @@ header nav ul ul li a:hover {
 
 .number-address .add-item .text-number {
   font-size: 1.5rem;
-  color: rgb(0, 150, 187);
+  color: #017ec6;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -1225,7 +1225,7 @@ header nav ul ul li a:hover {
 .wrap-map .home-map .map-vietnam svg {
   width: 100%;
   fill: #ffffff72;
-  stroke: rgb(0, 150, 187);
+  stroke: #017ec6;
   height: calc(100% -200px);
 }
 .wrap-map .show-map .home-map .map-vietnam svg path:hover {
@@ -1301,7 +1301,7 @@ header nav ul ul li a:hover {
   display: flex;
   align-items: flex-end;
   justify-content: left;
-  color: #0096bb;
+  color: #017ec6;
   cursor: pointer;
 }
 .wrap-listnews .box-list .story .title .btn-more svg {
@@ -1355,7 +1355,7 @@ header nav ul ul li a:hover {
 }
 .wrap-ques .ques-content .btn-submit {
   border-radius: 15px 0 15px 0;
-  background: #0096bb;
+  background: #017ec6;
   border: none;
   color: #fff;
   cursor: pointer;
@@ -1741,6 +1741,34 @@ header nav ul ul li a:hover {
   }
   .demo2 .wrap-slider .text-des h3 {
     font-size: 1.5rem;
+  }
+  .wrap-timeline .icon {
+    text-align: left !important;
+  }
+  .left,
+  .right {
+    left: 12% !important;
+  }
+  .timeline::after {
+    left: 14% !important;
+  }
+  .box-timeline::after {
+    left: 0px !important;
+  }
+  .box-timeline {
+    width: 85% !important;
+  }
+  .content {
+    margin-left: 23px !important;
+  }
+  .left::before {
+    left: 30px;
+    border: medium solid rgba(0, 73, 121, 0.09) !important;
+    border-width: 10px 10px 10px 0 !important;
+    border-color: transparent rgba(0, 73, 121, 0.09) transparent transparent !important;
+  }
+  .wrap-timeline .title-cate h4 {
+    font-size: 1.5rem !important;
   }
 }
 @media only screen and (max-width: 480px) {

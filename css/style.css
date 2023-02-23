@@ -84,7 +84,7 @@
 }
 .box-content .title-cate h4 {
   text-transform: uppercase;
-  color: rgb(0, 150, 187);
+  color: #017ec6;
 }
 
 .box-content .post {
@@ -118,7 +118,7 @@
 
 .wrap-organizing .box-head .title-cate h4 {
   text-transform: uppercase;
-  color: rgb(0, 150, 187);
+  color: #017ec6;
 }
 .wrap-organizing .box-head .box-text {
   flex: 1;
@@ -164,7 +164,7 @@
 .wrap-companion .box-title h4 {
   font-size: 2rem;
   text-transform: uppercase;
-  color: rgb(0, 150, 187);
+  color: #017ec6;
 }
 .wrap-companion .box-content .wrap-text p {
   text-align: justify;
@@ -220,7 +220,7 @@
 }
 .wrap-pagecate .wr-articles .btn-more {
   border-radius: 15px 0 15px 0;
-  background: #0096bb;
+  background: #017ec6;
   border: none;
   color: #fff;
   cursor: pointer;
@@ -284,7 +284,7 @@
 }
 
 .pagination a.active {
-  background-color: #0096bb;
+  background-color: #017ec6;
   color: white;
 }
 
@@ -340,7 +340,7 @@ input[type='submit'] {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #0096bb;
+  background-color: #017ec6;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -521,7 +521,7 @@ input[type='submit'] {
   margin-top: 10px;
 }
 .article__tag .heading {
-  background: #025e8c;
+  background: #017ec6;
   font-weight: 700;
   font-size: 13px;
   line-height: 15px;
@@ -636,7 +636,7 @@ input[type='submit'] {
 }
 .box-comment .btn-Submit,
 .box-comment .btnSubmit {
-  background: #025e8c;
+  background: #017ec6;
   border-radius: 3px;
   font-weight: 700;
   font-size: 13px;
@@ -661,7 +661,7 @@ input[type='submit'] {
 .wrap-more .title-cate h3 {
   font-size: 1.5rem;
   font-weight: 600;
-  color: rgb(2, 94, 140);
+  color: #017ec6;
   display: inline-block;
   position: relative;
   text-transform: uppercase;
@@ -679,7 +679,7 @@ input[type='submit'] {
   -khtml-transform: skew(-20deg);
   -moz-transform: skew(-20deg);
   transform: skew(-20deg);
-  background-color: rgb(2, 94, 140);
+  background-color: #017ec6;
 }
 .wrap-more .box-more {
   display: flex;
@@ -699,7 +699,7 @@ input[type='submit'] {
 .wrap-list .title-cate h3 {
   font-size: 1.5rem;
   font-weight: 600;
-  color: rgb(2, 94, 140);
+  color: #017ec6;
   display: inline-block;
   position: relative;
   text-transform: uppercase;
@@ -717,7 +717,7 @@ input[type='submit'] {
   -khtml-transform: skew(-20deg);
   -moz-transform: skew(-20deg);
   transform: skew(-20deg);
-  background-color: rgb(2, 94, 140);
+  background-color: #017ec6;
 }
 
 .wrap-list .box-list {
@@ -844,5 +844,5 @@ input[type='submit'] {
 }
 .wrap-timeline .title-cate h4 {
   font-size: 2rem;
-  color: rgb(0, 150, 187);
+  color: #017ec6;
 }
