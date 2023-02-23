@@ -859,7 +859,7 @@ header nav ul ul li a:hover {
   text-align: center;
 }
 .page-home .box-intro .icon {
-  border: 2px solid #017ec6;
+  /* border: 2px solid #017ec6; */
   width: 300px;
   height: 180px;
   border-radius: 10px 40px 10px;
@@ -867,7 +867,7 @@ header nav ul ul li a:hover {
   line-height: 100px;
   vertical-align: middle;
   padding: 35px;
-  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+  box-shadow: rgba(0, 0, 124, 0.05) 0px 1px 0px, rgba(12, 12, 181, 0.1) 0px 0px 8px;
 }
 
 .page-home .box-intro .icon:hover {
@@ -1900,6 +1900,10 @@ header nav ul ul li a:hover {
   }
   .wrap-body p strong {
     font-size: 1.2rem !important;
+  }
+  .wrap-introduce .box-tophead .submenu a {
+    background: none !important;
+    font-size: 1rem !important;
   }
 }
 @media only screen and (max-width: 390px) {
