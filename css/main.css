@@ -9,6 +9,68 @@
 }
 /*-------------*/
 
+.btn-down .arrows {
+  width: 60px;
+  height: 72px;
+  position: absolute;
+  left: 50%;
+  margin-left: -30px;
+  bottom: 70px;
+}
+
+.btn-down .arrows path {
+  stroke: #feffff;
+  fill: transparent;
+  stroke-width: 4px;
+  animation: arrow 2s infinite;
+  -webkit-animation: arrow 2s infinite;
+}
+
+@keyframes arrow {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes arrow /*Safari and Chrome*/ {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.arrows path.a1 {
+  animation-delay: -1s;
+  -webkit-animation-delay: -1s; /* Safari 和 Chrome */
+}
+
+.arrows path.a2 {
+  animation-delay: -0.5s;
+  -webkit-animation-delay: -0.5s; /* Safari 和 Chrome */
+}
+
+.arrows path.a3 {
+  animation-delay: 0s;
+  -webkit-animation-delay: 0s; /* Safari 和 Chrome */
+}
+
 /*--------------*/
 .nav-pos {
   position: absolute;
@@ -674,6 +736,7 @@ header nav ul ul li a:hover {
   transform: translate(-50%, -50%);
   width: 100%;
   padding: 20px;
+  text-align: center;
   opacity: 1;
 
   display: flex;
@@ -685,7 +748,7 @@ header nav ul ul li a:hover {
 .panel-show .wrap-bg .text-content .title-text {
   display: flex;
   flex-direction: column;
-  font-size: 30px;
+  font-size: 2.5rem;
   text-transform: uppercase;
   row-gap: 10px;
   line-height: 1.5;
@@ -854,7 +917,7 @@ header nav ul ul li a:hover {
 }
 .wrap-slider .thumb img {
   width: 100%;
-  border-radius: 10px;
+
   height: 100vh;
   object-fit: cover;
 }
@@ -1490,9 +1553,7 @@ header nav ul ul li a:hover {
   .wrap-slider .thumb img {
     height: auto;
   }
-  .wrap-slider .slideshow-container {
-    padding: 15px 0px;
-  }
+
   .wrap-slider .text-des {
     padding: 30px 20px;
   }
@@ -1661,6 +1722,16 @@ header nav ul ul li a:hover {
     width: calc(100% - 50px);
     margin: auto;
   }
+  .btn-down .arrows path {
+    stroke-width: 2px;
+  }
+  .btn-down .arrows {
+    bottom: 40px;
+  }
+  .wrap-slider .text-des {
+    text-align: center;
+    padding: 20px 0px;
+  }
   .wrap-more .box-more .story {
     width: 47% !important;
   }
@@ -1720,7 +1791,7 @@ header nav ul ul li a:hover {
     letter-spacing: 5px;
   }
   .panel-show .wrap-bg .text-content {
-    top: 50%;
+    top: 40%;
   }
   .wrap-companion .box-title h4 {
     font-size: 1.5rem !important;
@@ -1732,7 +1803,7 @@ header nav ul ul li a:hover {
     font-size: 1.5rem;
   }
   h2 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
   .wrap-organizing .h-24,
   .wrap-companion .h-24,
@@ -1762,7 +1833,7 @@ header nav ul ul li a:hover {
     height: 50px;
   }
   .panel-show .wrap-bg .text-content {
-    row-gap: 10px;
+    row-gap: 0px;
   }
   .border-bottom {
     bottom: 142px;
