@@ -864,7 +864,7 @@ header nav ul ul li a:hover {
   text-align: center;
 }
 .page-home .box-intro .icon {
-  /* border: 2px solid #017ec6; */
+  border: 2px solid #017ec6;
   width: 300px;
   height: 180px;
   border-radius: 10px 40px 10px;
@@ -1061,9 +1061,7 @@ header nav ul ul li a:hover {
 
 .wrap-slider .slideshow-container {
   position: relative;
-  background: #0049792b;
-  border-top: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
+  background: #00497917;
 }
 .wrap-slider .mySlides {
   display: flex;
