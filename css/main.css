@@ -1061,7 +1061,9 @@ header nav ul ul li a:hover {
 
 .wrap-slider .slideshow-container {
   position: relative;
-  background: #00497917;
+  background: #0049792b;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
 }
 .wrap-slider .mySlides {
   display: flex;
