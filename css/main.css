@@ -1788,6 +1788,9 @@ header nav ul ul li a:hover {
   .page-home .box-intro {
     display: flex;
     flex-direction: column;
+    align-items: inherit;
+
+    padding: 0px 20px;
   }
   .page-home .box-intro .box-letter,
   .page-home .box-intro .box-member,
@@ -1850,9 +1853,7 @@ header nav ul ul li a:hover {
   .title-cate h4 a {
     background: none;
   }
-  .page-home .box-intro {
-    align-items: baseline;
-  }
+
   .box-topic .h-24 {
     height: 40px;
   }
@@ -1955,9 +1956,6 @@ header nav ul ul li a:hover {
     padding: 0px 0px 0px;
   }
 
-  .page-home .box-intro {
-    padding: 0px 20px;
-  }
   .number-address {
     width: 85%;
   }
