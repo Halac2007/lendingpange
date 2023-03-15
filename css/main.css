@@ -1752,6 +1752,7 @@ header nav ul ul li a:hover {
   }
   .page-home .box-intro img {
     border-radius: 50% 20% / 0% 40%;
+    width: 100%;
   }
   .wrap-timeline .icon {
     text-align: left !important;
@@ -1795,6 +1796,7 @@ header nav ul ul li a:hover {
     flex-direction: row;
     row-gap: 20px;
     column-gap: 5px !important;
+    justify-content: space-around;
   }
 }
 @media only screen and (max-width: 480px) {
