@@ -1919,6 +1919,12 @@ header nav ul ul li a:hover {
   .wrap-mapvietnam .body-map .map-text {
     gap: 100px;
   }
+  .number-address {
+    width: 90%;
+  }
+  .wrap-mapvietnam .body-map .map-text .note-text {
+    width: 90%;
+  }
 }
 @media only screen and (max-width: 390px) {
   .border-bottom {
@@ -1937,5 +1943,11 @@ header nav ul ul li a:hover {
   }
   .page-home .box-intro {
     padding: 0px 20px;
+  }
+  .number-address {
+    width: 85%;
+  }
+  .wrap-mapvietnam .body-map .map-text .note-text {
+    width: 85%;
   }
 }
