@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@200;300;400;500;600;700&family=Arimo:ital,wght@0,700;1,600&family=Babylonica&family=Comfortaa:wght@700&family=Dancing+Script:wght@700&family=DynaPuff:wght@600;700&family=Exo+2:wght@500;600;700&family=Frank+Ruhl+Libre:wght@600;700;900&family=Gloria+Hallelujah&family=Gwendolyn:wght@700&family=IBM+Plex+Sans:ital,wght@0,500;0,600;1,500&family=Indie+Flower&family=Lavishly+Yours&family=Montserrat:wght@500;600;700;900&family=Mulish:ital@1&family=Orbitron&family=Pacifico&family=Poppins:wght@400;500;600;700;800;900&family=Roboto:wght@400;500;700&family=Telex&family=Tourney:wght@600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@200;300;400;500;600;700&family=Arimo:ital,wght@0,700;1,600&family=Babylonica&family=Big+Shoulders+Inline+Text:wght@100;300;700;800;900&family=Bungee&family=Comfortaa:wght@700&family=Dancing+Script:wght@700&family=DynaPuff:wght@600;700&family=Exo+2:wght@500;600;700&family=Frank+Ruhl+Libre:wght@600;700;900&family=Gloria+Hallelujah&family=Gluten:wght@600;700;800&family=Goldman:wght@400;700&family=Great+Vibes&family=Gwendolyn:wght@700&family=IBM+Plex+Sans:ital,wght@0,500;0,600;1,500&family=Indie+Flower&family=Lavishly+Yours&family=Lobster&family=Montserrat:wght@500;600;700;900&family=Mulish:ital@1&family=Open+Sans:wght@500;600;700&family=Orbitron&family=Pacifico&family=Paytone+One&family=Poppins:wght@400;500;600;700;800;900&family=Roboto:wght@400;500;700&family=Telex&family=Tourney:wght@600;700;800&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -446,7 +446,7 @@ header nav ul ul li a:hover {
   opacity: 0;
 }
 .panel-show .wrap-bg .text-content {
-  max-width: 920px;
+  max-width: 950px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -466,10 +466,12 @@ header nav ul ul li a:hover {
 .panel-show .wrap-bg .text-content .title-text {
   display: flex;
   flex-direction: column;
-  font-size: 2.5rem;
+  font-size: 4rem;
   text-transform: uppercase;
   row-gap: 10px;
   line-height: 1.5;
+
+  font-family: 'Paytone One', sans-serif;
 }
 .panel-show .wrap-bg .text-content .title-text em {
   font-size: 16px;
@@ -477,7 +479,7 @@ header nav ul ul li a:hover {
   text-align: center;
 }
 .panel-show .wrap-bg .text-content .icon-top {
-  background: url(../img/logo.png);
+  /* background: url(../img/logo.png); */
   background-repeat: no-repeat;
 
   margin: 0 auto 30px;
@@ -587,9 +589,9 @@ header nav ul ul li a:hover {
   box-shadow: rgba(0, 0, 124, 0.05) 0px 1px 0px, rgba(12, 12, 181, 0.1) 0px 0px 8px;
 }
 
-.page-home .box-intro .icon:hover {
+/* .page-home .box-intro .icon:hover {
   background: var(--blue);
-}
+} */
 .page-home .box-intro .icon:hover svg {
   fill: #fff;
 }
@@ -914,6 +916,7 @@ header nav ul ul li a:hover {
 }
 .wrap-mapvietnam .body-map .map-vn {
   flex: 1;
+  box-shadow: rgba(3, 101, 214, 0.073) 0px 0px 0px 1px;
 }
 .wrap-mapvietnam .body-map .map-vn svg {
   width: 100%;
@@ -1003,7 +1006,7 @@ header nav ul ul li a:hover {
 }
 
 .number-address .add-item .number a {
-  font-size: 5.5rem;
+  font-size: 4rem;
   color: var(--bg-btn);
   font-weight: 700;
 }
@@ -1022,11 +1025,14 @@ header nav ul ul li a:hover {
 }
 
 .title-cate {
-  font-size: 1.5rem;
+  font-size: 2rem;
 
   text-align: center;
   text-transform: uppercase;
   padding: 20px 0px;
+
+  font-family: 'Gluten', cursive;
+  font-weight: 600;
 }
 .title-cate h4 {
   padding: 30px 0px;
@@ -1585,8 +1591,12 @@ header nav ul ul li a:hover {
   .wrap-present .box-present .item-present .box-item {
     flex-wrap: wrap;
   }
-  .wrap-introduce {
-    display: none;
+  .wrap-mapvietnam .body-map .map-text .note-text {
+    order: -1;
+  }
+  .number-address {
+    order: 1;
+    padding: 0px 10px;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -1804,10 +1814,14 @@ header nav ul ul li a:hover {
     font-size: 1rem;
   }
   .page-home .box-intro .icon {
-    width: 80px;
+    width: 88px;
     height: 80px;
     padding: 4px;
-    border-radius: 40px;
+    border-radius: 20px;
+  }
+
+  .page-home .box-intro img {
+    border-radius: 17px 10px 17px;
   }
   .page-home .box-intro .title {
     text-align: center;
@@ -1866,7 +1880,7 @@ header nav ul ul li a:hover {
     height: 70vh;
   }
   .panel-show .wrap-bg .text-content .title-text {
-    font-size: 1.5rem;
+    font-size: 3rem;
   }
   .panel-show .wrap-bg .text-content .title-text em {
     font-size: 1rem;
@@ -1878,6 +1892,7 @@ header nav ul ul li a:hover {
   .panel-show .wrap-bg .text-content {
     row-gap: 0px;
   }
+
   .border-bottom {
     bottom: 142px;
   }
@@ -1900,6 +1915,9 @@ header nav ul ul li a:hover {
   }
   .wrap-footer {
     padding: 0 10px;
+  }
+  .wrap-mapvietnam .body-map .map-text {
+    gap: 100px;
   }
 }
 @media only screen and (max-width: 390px) {
