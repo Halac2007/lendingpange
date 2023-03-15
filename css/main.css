@@ -1742,16 +1742,16 @@ header nav ul ul li a:hover {
   .page-home .box-intro .box-letter .title,
   .page-home .box-intro .box-member .title,
   .page-home .box-intro .box-companion .title {
-    flex: 1;
+    flex: 1.5;
   }
   .box-focus .focus-content .title-focus .sapo {
     font-size: 1.2rem;
   }
   .page-home .box-intro .icon {
-    border-radius: 50% 20% / 10% 40%;
+    border-radius: 50% 20% / 0% 40%;
   }
   .page-home .box-intro img {
-    border-radius: 50% 20% / 10% 40%;
+    border-radius: 50% 20% / 0% 40%;
   }
   .wrap-timeline .icon {
     text-align: left !important;
