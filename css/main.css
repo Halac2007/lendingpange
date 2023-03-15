@@ -1648,9 +1648,11 @@ header nav ul ul li a:hover {
     height: 80px;
   }
   .page-home .box-intro .icon {
-    width: 130px;
-    height: 120px;
-    padding: 22px;
+    height: 100px;
+  }
+  .page-home .box-intro .title a {
+    font-size: 1.2rem;
+    text-transform: inherit;
   }
   .wrap-listnews {
     max-width: 550px;
@@ -1714,7 +1716,7 @@ header nav ul ul li a:hover {
     text-align: center;
   }
   .wrap-oranga .box-list .card {
-    width: 90%;
+    width: 70%;
   }
 
   .page-home .wrap-top .header-title .box-head .title h1 {
@@ -1732,10 +1734,25 @@ header nav ul ul li a:hover {
     text-align: center;
   }
 
+  .page-home .box-intro .box-letter .icon,
+  .page-home .box-intro .box-member .icon,
+  .page-home .box-intro .box-companion .icon {
+    flex: 1;
+  }
+  .page-home .box-intro .box-letter .title,
+  .page-home .box-intro .box-member .title,
+  .page-home .box-intro .box-companion .title {
+    flex: 1;
+  }
   .box-focus .focus-content .title-focus .sapo {
     font-size: 1.2rem;
   }
-
+  .page-home .box-intro .icon {
+    border-radius: 50% 20% / 10% 40%;
+  }
+  .page-home .box-intro img {
+    border-radius: 50% 20% / 10% 40%;
+  }
   .wrap-timeline .icon {
     text-align: left !important;
   }
@@ -1763,6 +1780,21 @@ header nav ul ul li a:hover {
   }
   .wrap-timeline .title-cate h4 {
     font-size: 1.5rem !important;
+  }
+  .wrap-oranga .box-list {
+    row-gap: 50px;
+  }
+  .page-home .box-intro {
+    display: flex;
+    flex-direction: column;
+  }
+  .page-home .box-intro .box-letter,
+  .page-home .box-intro .box-member,
+  .page-home .box-intro .box-companion {
+    display: flex;
+    flex-direction: row;
+    row-gap: 20px;
+    column-gap: 5px !important;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -1809,20 +1841,7 @@ header nav ul ul li a:hover {
     max-width: 370px;
     margin: auto;
   }
-  .page-home .box-intro .title a {
-    text-transform: inherit;
-    font-size: 1rem;
-  }
-  .page-home .box-intro .icon {
-    width: 88px;
-    height: 80px;
-    padding: 4px;
-    border-radius: 20px;
-  }
 
-  .page-home .box-intro img {
-    border-radius: 17px 10px 17px;
-  }
   .page-home .box-intro .title {
     text-align: center;
   }
@@ -1933,14 +1952,7 @@ header nav ul ul li a:hover {
   .wrap-introduce .box-tophead {
     padding: 0px 0px 0px;
   }
-  .page-home .box-intro .icon {
-    border-radius: 10px;
-  }
-  .page-home .box-intro .icon {
-    width: 67px;
-    height: 60px;
-    padding: 0px;
-  }
+
   .page-home .box-intro {
     padding: 0px 20px;
   }
