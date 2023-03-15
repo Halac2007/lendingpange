@@ -597,8 +597,6 @@ header nav ul ul li a:hover {
 }
 .page-home .box-intro .title a {
   text-transform: uppercase;
-  color: var(--blue);
-  font-weight: 600;
 }
 
 .page-home .box-intro img {
@@ -1015,7 +1013,6 @@ header nav ul ul li a:hover {
   font-size: 1.3rem;
   color: var(--blue);
   font-weight: 700;
-  text-transform: uppercase;
 }
 /*-----------*/
 
@@ -1798,7 +1795,7 @@ header nav ul ul li a:hover {
     display: flex;
     flex-direction: row;
     row-gap: 20px;
-    column-gap: 5px !important;
+    column-gap: 15px !important;
     justify-content: space-around;
   }
 }
@@ -1847,9 +1844,6 @@ header nav ul ul li a:hover {
     margin: auto;
   }
 
-  .page-home .box-intro .title {
-    text-align: center;
-  }
   .title-cate h4 a {
     background: none;
   }
