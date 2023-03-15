@@ -74,7 +74,9 @@
 }
 
 /*----------------*/
-
+.wrap-body {
+  padding-bottom: 30px;
+}
 .wrap-body .box-title {
   display: flex;
   align-items: center;
