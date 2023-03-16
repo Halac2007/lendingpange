@@ -79,3 +79,36 @@ for (i = 0; i < caccordContent.length; i++) {
 //   counter('count2', 90, 4, 1500)
 //   counter('count3', 90, 5, 1500)
 // })
+
+/*--------------mapvietnam----------------*/
+const mapvietnam = document.getElementById('mapvietnam'),
+  provinceInfo = document.getElementById('provinceInfo'),
+  allProvinces = mapvietnam.querySelectorAll('g')
+
+mapvietnam.addEventListener('click', function (e) {
+  const province = e.target.parentNode
+  if (e.target.nodeName == 'path') {
+    for (var i = 0; i < allProvinces.length; i++) {
+      allProvinces[i].classList.remove('active')
+    }
+    province.classList.add('active')
+    const provinceName = province.querySelector('title').innerHTML,
+      provincePara = province.querySelector('desc p')
+    ;(sourceImg = province.querySelector('img')), (imgPath = '/')
+    provinceInfo.innerHTML = ''
+    provinceInfo.insertAdjacentHTML(
+      'afterbegin',
+      '<img src=' +
+        imgPath +
+        sourceImg.getAttribute('xlink:href') +
+        " alt='" +
+        sourceImg.getAttribute('alt') +
+        "'><h1>" +
+        provinceName +
+        '</h1><p>' +
+        provincePara.innerHTML +
+        '</p>'
+    )
+    provinceInfo.classList.add('show')
+  }
+})
