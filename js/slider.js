@@ -85,7 +85,8 @@ const mapvietnam = document.getElementById('mapvietnam'),
   provinceInfo = document.getElementById('provinceInfo'),
   allProvinces = mapvietnam.querySelectorAll('g')
 
-mapvietnam.addEventListener('click', function (e) {
+mapvietnam.addEventListener('mouseover', function (e) {
+  console.log(e)
   const province = e.target.parentNode
   if (e.target.nodeName == 'path') {
     for (var i = 0; i < allProvinces.length; i++) {
@@ -94,18 +95,19 @@ mapvietnam.addEventListener('click', function (e) {
     province.classList.add('active')
     const provinceName = province.querySelector('title').innerHTML,
       provincePara = province.querySelector('desc p')
-    ;(sourceImg = province.querySelector('img')), (imgPath = '/')
+    provinceInfo.style.left = e.x + 'px'
+    provinceInfo.style.top = e.y + 'px'
+    provinceInfo.style.marginTop = -50 + 'px'
     provinceInfo.innerHTML = ''
     provinceInfo.insertAdjacentHTML(
       'afterbegin',
-      '<img src=' +
-        imgPath +
-        sourceImg.getAttribute('xlink:href') +
-        " alt='" +
-        sourceImg.getAttribute('alt') +
-        "'><h1>" +
+      '<div class="test">' +
+        '<h3>' +
         provinceName +
-        '</h1><p>' +
+        '</h3>' +
+        '<p class="close">&times;</p>' +
+        '</div>' +
+        ' <p>' +
         provincePara.innerHTML +
         '</p>'
     )

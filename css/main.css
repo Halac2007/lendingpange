@@ -913,6 +913,7 @@ header nav ul ul li a:hover {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 .wrap-mapvietnam .body-map .map-vn {
+  position: relative;
   flex: 1;
   box-shadow: rgba(3, 101, 214, 0.073) 0px 0px 0px 1px;
 }

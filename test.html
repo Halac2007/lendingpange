@@ -18,6 +18,21 @@
         fill: hsl(240, 55%, 40%) !important;
       }
 
+      #provinceInfo.show {
+        background: #6b936a;
+      }
+      #provinceInfo.show::after {
+        border-color: transparent #6b936a transparent transparent;
+        border-image: none;
+        border-style: solid;
+        border-width: 20px;
+
+        top: 20px;
+        content: ' ';
+        display: block;
+        right: 75%;
+        position: relative;
+      }
       #provinceInfo {
         /* position: absolute;
         top: 0;
@@ -37,6 +52,7 @@
         cursor: default;
         pointer-events: none;
         visibility: visible;
+        border-radius: 12px;
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
       }
 
@@ -66,10 +82,10 @@
         padding-left: 1rem;
         margin-top: -0.5rem;
         font-weight: 400; */
-        padding-left: 30px;
-        padding-top: 20px;
-        margin-top: 0;
-        color: #333;
+        background: #333;
+        padding: 20px;
+
+        color: #fff;
         font-family: Tahoma, Arial, sans-serif;
       }
       #provinceInfo .test .close {
@@ -896,7 +912,6 @@
                 <image xlink:href="img/thumbs/2.jpg" alt="Hành trình tới Hà Nội"></image>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, esse.</p>
               </desc>
-
               <path
                 fill="red"
                 d="M 125.02425913163334 113.35210199862163 L 125.69772570640937 114.74713990351482 L 125.8420399724328 116.19028256374914 L 124.92804962095106 118.16257753273604 L 125.31288766368021 120.42350103376981 L 128.05485871812542 123.30978635423845 L 127.86243969676084 125.23397656788421 L 124.83184011026877 126.14796691936596 L 124.30268780151619 128.21647139903513 L 125.21667815299793 128.9380427291523 L 124.83184011026877 130.57360441075122 L 125.12046864231564 131.9686423156444 L 126.32308752584424 132.44968986905582 L 126.70792556857339 134.3738800827016 L 128.00675396278427 135.0473466574776 L 127.33328738800826 135.96133700895933 L 125.16857339765679 136.29807029634736 L 121.70503101309441 137.40447966919368 L 120.69483115093038 140.19455547898002 L 119.63652653342521 139.04004135079254 L 117.13507925568572 137.74121295658165 L 114.9222605099931 133.4117849758787 L 112.22839421088904 131.53569951757407 L 111.41061337008959 130.42929014472776 L 112.18028945554789 127.97594762232943 L 111.31440385940729 125.4263955892488 L 109.96747070985526 124.60861474844934 L 107.03308063404548 124.22377670572018 L 104.7721571330117 124.60861474844934 L 104.0024810475534 123.11736733287388 L 104.72405237767056 120.56781529979324 L 104.0024810475534 118.25878704341834 L 105.92667126119916 116.62322536181944 L 106.26340454858718 114.36230186078566 L 108.28380427291522 114.16988283942109 L 108.76485182632666 115.22818745692625 L 109.6788421778084 117.63342522398345 L 111.60303239145416 119.07656788421778 L 116.31729841488628 119.3170916609235 L 119.8289455547898 121.24128187456925 L 120.40620261888353 118.64362508614748 L 119.92515506547208 115.66113025499655 L 120.11757408683665 112.14948311509303 L 122.61902136457614 112.10137835975189 L 125.02425913163334 113.35210199862163 Z"
@@ -1210,6 +1225,7 @@
         allProvinces = mapvietnam.querySelectorAll('g')
 
       mapvietnam.addEventListener('click', function (e) {
+        console.log(e)
         const province = e.target.parentNode
         if (e.target.nodeName == 'path') {
           for (var i = 0; i < allProvinces.length; i++) {
@@ -1218,7 +1234,10 @@
           province.classList.add('active')
           const provinceName = province.querySelector('title').innerHTML,
             provincePara = province.querySelector('desc p')
+          provinceInfo.style.left = e.x + 'px'
 
+          provinceInfo.style.top = e.y + 'px'
+          provinceInfo.style.marginTop = -50 + 'px'
           provinceInfo.innerHTML = ''
           provinceInfo.insertAdjacentHTML(
             'afterbegin',
@@ -1226,7 +1245,7 @@
               '<h3>' +
               provinceName +
               '</h3>' +
-              '<p class="close">&times;</p>' +
+              '<p class="close">&#10799</p>' +
               '</div>' +
               ' <p>' +
               provincePara.innerHTML +
