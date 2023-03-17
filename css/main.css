@@ -1254,14 +1254,15 @@ header nav ul ul li a:hover {
   width: 100%;
   display: flex;
   flex-direction: column;
-  row-gap: 20px;
 }
 .wrap-listnews .box-list .story .thumb img {
   width: 100%;
   object-fit: cover;
   border-radius: 10px 40px 10px;
 }
-
+.wrap-listnews .box-list .story .title {
+  text-align: center;
+}
 .wrap-listnews .box-list .story .title .btn-more a {
   display: flex;
   align-items: flex-end;
@@ -1787,7 +1788,7 @@ header nav ul ul li a:hover {
     display: flex;
     flex-direction: column;
     align-items: inherit;
-
+    row-gap: 30px;
     padding: 0px 20px;
   }
   .page-home .box-intro .box-letter,
@@ -1798,6 +1799,9 @@ header nav ul ul li a:hover {
     row-gap: 20px;
     column-gap: 15px !important;
     justify-content: space-around;
+  }
+  .wrap-listnews .box-list {
+    row-gap: 30px;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -1942,6 +1946,12 @@ header nav ul ul li a:hover {
   .wrap-mapvietnam .body-map .map-text .note-text {
     width: 90%;
   }
+  .wrap-listnews .box-list {
+    row-gap: 30px;
+  }
+  .page-home .box-intro {
+    row-gap: 30px;
+  }
 }
 @media only screen and (max-width: 390px) {
   .border-bottom {
@@ -1956,5 +1966,19 @@ header nav ul ul li a:hover {
   }
   .wrap-mapvietnam .body-map .map-text .note-text {
     width: 85%;
+  }
+  .wrap-listnews .box-list {
+    row-gap: 30px;
+  }
+  .page-home .box-intro {
+    row-gap: 30px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .wrap-listnews .box-list {
+    row-gap: 30px;
+  }
+  .page-home .box-intro {
+    row-gap: 30px;
   }
 }

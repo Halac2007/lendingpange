@@ -85,7 +85,7 @@ const mapvietnam = document.getElementById('mapvietnam'),
   provinceInfo = document.getElementById('provinceInfo'),
   allProvinces = mapvietnam.querySelectorAll('g')
 
-mapvietnam.addEventListener('mouseover', function (e) {
+mapvietnam.addEventListener('click', function (e) {
   console.log(e)
   const province = e.target.parentNode
   if (e.target.nodeName == 'path') {
