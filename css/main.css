@@ -1590,12 +1590,11 @@ header nav ul ul li a:hover {
   .wrap-present .box-present .item-present .box-item {
     flex-wrap: wrap;
   }
-  .wrap-mapvietnam .body-map .map-text .note-text {
-    order: -1;
-  }
-  .number-address {
+  .wrap-mapvietnam .body-map .map-vn {
     order: 1;
-    padding: 0px 10px;
+  }
+  .wrap-mapvietnam .body-map .map-text {
+    order: -1;
   }
 }
 @media only screen and (max-width: 600px) {

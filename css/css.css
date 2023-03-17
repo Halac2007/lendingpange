@@ -130,6 +130,22 @@ button {
   fill: hsl(240, 55%, 40%) !important;
 }
 
+#provinceInfo.show {
+  background: #6b936a;
+}
+#provinceInfo.show::after {
+  border-color: transparent #6b936a transparent transparent;
+  border-image: none;
+  border-style: solid;
+  border-width: 20px;
+  top: -14px;
+  content: ' ';
+  display: block;
+  right: 90%;
+  position: relative;
+  transform: scaleX(1.5);
+  transform: skew(318deg, 10deg);
+}
 #provinceInfo {
   /* position: absolute;
   top: 0;
@@ -179,15 +195,15 @@ button {
   padding-left: 1rem;
   margin-top: -0.5rem;
   font-weight: 400; */
-  padding-left: 30px;
-  padding-top: 20px;
-  margin-top: 0;
-  color: #333;
+  background: #333;
+  padding: 20px;
+
+  color: #fff;
   font-family: Tahoma, Arial, sans-serif;
 }
 #provinceInfo .test .close {
   position: absolute;
-
+  top: -30px;
   right: -20px;
   transition: all 200ms;
   font-size: 30px;

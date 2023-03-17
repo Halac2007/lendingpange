@@ -26,12 +26,13 @@
         border-image: none;
         border-style: solid;
         border-width: 20px;
-
-        top: 20px;
+        top: -14px;
         content: ' ';
         display: block;
-        right: 75%;
+        right: 90%;
         position: relative;
+        transform: scaleX(1.5);
+        transform: skew(318deg, 10deg);
       }
       #provinceInfo {
         /* position: absolute;
@@ -1225,7 +1226,7 @@
         allProvinces = mapvietnam.querySelectorAll('g')
 
       mapvietnam.addEventListener('click', function (e) {
-        console.log(e)
+        // console.log(e)
         const province = e.target.parentNode
         if (e.target.nodeName == 'path') {
           for (var i = 0; i < allProvinces.length; i++) {
@@ -1234,10 +1235,10 @@
           province.classList.add('active')
           const provinceName = province.querySelector('title').innerHTML,
             provincePara = province.querySelector('desc p')
-          provinceInfo.style.left = e.x + 'px'
+          provinceInfo.style.left = `${e.x - 20}px`
 
-          provinceInfo.style.top = e.y + 'px'
-          provinceInfo.style.marginTop = -50 + 'px'
+          provinceInfo.style.top = `${e.y - 210}px`
+
           provinceInfo.innerHTML = ''
           provinceInfo.insertAdjacentHTML(
             'afterbegin',
