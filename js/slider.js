@@ -96,9 +96,9 @@ mapvietnam.addEventListener('mouseover', function (e) {
     province.classList.add('active')
     const provinceName = province.querySelector('title').innerHTML,
       provincePara = province.querySelector('desc')
-    provinceInfo.style.left = `${e.x - 120}px`
+    provinceInfo.style.left = `${e.x - 180}px`
 
-    provinceInfo.style.top = `${e.y - 350}px`
+    provinceInfo.style.top = `${e.y - 400}px`
 
     provinceInfo.innerHTML = ''
     provinceInfo.insertAdjacentHTML(

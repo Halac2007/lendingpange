@@ -144,6 +144,24 @@ button {
   background: rgb(255, 255, 255);
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+.box-total::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  margin-left: -0.5em;
+  bottom: -2em;
+  left: 20%;
+  box-sizing: border-box;
+
+  border: 1em solid rgb(174, 174, 174);
+  border-color: transparent transparent #ffffff #ffffff;
+
+  transform-origin: 0 0;
+  transform: rotate(-45deg);
+
+  box-shadow: -3px 3px 3px 0 rgba(99, 99, 99, 0.4);
+}
 .box-total .title {
   border-radius: 10px;
 }
@@ -180,9 +198,10 @@ button {
 @media all and (max-width: 750px) {
   #provinceInfo {
     width: 100%;
-    position: static;
     background: none;
+    left: 0px !important;
   }
+
   #provinceInfo.show p {
     color: #000 !important;
     margin-bottom: 2rem;
