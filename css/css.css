@@ -129,46 +129,49 @@ button {
 .active:hover {
   fill: hsl(240, 55%, 40%) !important;
 }
-
-#provinceInfo.show {
-  background: #6b936a;
+#provinceInfo {
+  position: absolute;
+  opacity: 1;
 }
 #provinceInfo.show::after {
-  border-color: transparent #6b936a transparent transparent;
-  border-image: none;
-  border-style: solid;
-  border-width: 20px;
-  top: -14px;
-  content: ' ';
-  display: block;
-  right: 90%;
   position: relative;
-  transform: scaleX(1.5);
-  transform: skew(318deg, 10deg);
 }
-#provinceInfo {
-  /* position: absolute;
-  top: 0;
-  right: 0;
-  width: 25%;
-  
-  pointer-events: none;
-  opacity: 0;
-  transition: 1s;
 
-   */
-  background: rgba(0, 0, 0, 0.2);
-  position: absolute;
-  left: 121px;
-  top: 171px;
-  opacity: 1;
-  cursor: default;
-  pointer-events: none;
-  visibility: visible;
-  border-radius: 12px;
+.box-total {
+  width: 300px;
+  min-height: 180px;
+  border-radius: 10px;
+  background: rgb(255, 255, 255);
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+.box-total .title {
+  border-radius: 10px;
+}
 
+.box-total .dest-text {
+  min-height: 145px;
+}
+
+#provinceInfo .title h3 {
+  background: #333;
+  padding: 20px;
+
+  color: #fff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#provinceInfo p {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+#provinceInfo p a {
+  text-decoration: none;
+  color: #017ec6;
+  border-radius: 5px;
+  border: 1px solid #33333317;
+  padding: 5px;
+}
 @media all and (max-width: 800px) {
   #provinceInfo {
     width: 40%;
@@ -187,34 +190,4 @@ button {
 }
 #provinceInfo.show {
   opacity: 1;
-}
-
-#provinceInfo .test h3 {
-  /* background: hsl(240, 55%, 40%);
-  padding: 0.3rem;
-  padding-left: 1rem;
-  margin-top: -0.5rem;
-  font-weight: 400; */
-  background: #333;
-  padding: 20px;
-
-  color: #fff;
-  font-family: Tahoma, Arial, sans-serif;
-}
-#provinceInfo .test .close {
-  position: absolute;
-  top: -30px;
-  right: -20px;
-  transition: all 200ms;
-  font-size: 30px;
-  font-weight: bold;
-  text-decoration: none;
-  color: #333;
-}
-#provinceInfo p {
-  margin-left: 2rem;
-  margin-right: 2rem;
-}
-#provinceInfo img {
-  width: 100%;
 }
