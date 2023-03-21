@@ -926,10 +926,8 @@ input[type='submit'] {
   column-gap: 20px;
   row-gap: 20px;
 }
-.wrap-present .box-present .item-present .box-item .item .thumb {
-  width: 320px;
-  height: 220px;
-  overflow: hidden;
+.wrap-present .box-present .item-present .box-item .item {
+  width: 32%;
 }
 .wrap-present .box-present .item-present .box-item .item .thumb img {
   width: 100%;

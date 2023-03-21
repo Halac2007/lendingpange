@@ -183,7 +183,6 @@ header nav ul ul li a:hover {
   width: 28px;
   height: 28px;
   color: #fff;
-  margin-left: 8px;
 }
 .nav-overlay {
   /* position: fixed; */
@@ -282,7 +281,7 @@ header nav ul ul li a:hover {
   justify-content: space-between;
   align-items: center;
 
-  padding: 5px 0px;
+  padding: 5px;
 }
 /* .nav-mobile ul ul {
   display: contents;
@@ -2045,5 +2044,20 @@ header nav ul ul li a:hover {
   }
   .page-home .box-intro {
     row-gap: 30px;
+  }
+  .number-address .add-item .number a {
+    font-size: 2.5rem;
+  }
+  .number-address {
+    width: 66%;
+  }
+  .wrap-mapvietnam .body-map .map-text .note-text {
+    width: 70%;
+  }
+  .wrap-mapvietnam .body-map .map-text .note-text div span {
+    font-size: 9px;
+  }
+  .panel-show .wrap-bg .text-content .content-title h1 {
+    font-size: 2rem;
   }
 }
