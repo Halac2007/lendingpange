@@ -1334,8 +1334,9 @@ header nav ul ul li a:hover {
   color: red;
 }
 .wrap-listnews .story .title .cate-box a {
-  color: red;
+  color: var(--bg-btn);
   text-transform: uppercase;
+  font-weight: 700;
 }
 .wrap-listnews .story .thumb {
   position: relative;
@@ -1655,6 +1656,10 @@ header nav ul ul li a:hover {
   }
   .panel-show .wrap-bg .text-content .content-title h1:nth-child(2) {
     animation: none;
+    color: #fff;
+  }
+  .panel-show .wrap-bg .text-content .content-title h1:nth-child(1) {
+    -webkit-text-stroke: 2px rgb(19 153 252 / 81%);
   }
   .panel-show .wrap-bg .text-content .title-cate {
     font-size: 1.5rem;
