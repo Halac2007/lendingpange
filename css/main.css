@@ -643,7 +643,14 @@ header nav ul ul li a:hover {
 .page-home .box-intro .title a {
   text-transform: uppercase;
 }
-
+.page-home .box-intro .icon img:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: 1s ease;
+  box-shadow: rgba(12, 12, 181, 0.1) 0px 0px 0px 2px, rgba(12, 12, 181, 0.1) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
 .page-home .box-intro img {
   width: 100%;
   height: 100%;
@@ -1648,6 +1655,9 @@ header nav ul ul li a:hover {
   }
   .panel-show .wrap-bg .text-content .content-title h1:nth-child(2) {
     animation: none;
+  }
+  .panel-show .wrap-bg .text-content .title-cate {
+    font-size: 1.5rem;
   }
   .panel-show .wrap-bg .text-content {
     row-gap: 40px;
