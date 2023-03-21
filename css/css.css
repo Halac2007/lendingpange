@@ -208,13 +208,5 @@ button {
 
   #provinceInfo.show p {
     color: #000 !important;
-    margin-bottom: 2rem;
-  }
-}
-
-@media all and (max-width: 450px) {
-  .box-total {
-    width: 200px;
-    min-height: 100px;
   }
 }
