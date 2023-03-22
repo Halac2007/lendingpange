@@ -972,6 +972,15 @@ header nav ul ul li a:hover {
   width: 100%;
   height: 100vh;
 }
+.wrap-mapvietnam .body-map .map-vn .start {
+  position: absolute;
+  top: 20%;
+  left: 39%;
+}
+.wrap-mapvietnam .body-map .map-vn .start svg {
+  width: 15px;
+  height: 15px;
+}
 .wrap-mapvietnam .body-map .map-vn img {
   width: 100%;
 }
@@ -1869,6 +1878,9 @@ header nav ul ul li a:hover {
   }
   .wrap-listnews .box-list {
     row-gap: 30px;
+  }
+  .wrap-present .box-present .item-present .box-item .item {
+    width: 100% !important;
   }
 }
 @media only screen and (max-width: 480px) {

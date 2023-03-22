@@ -1,57 +1,49 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <title>Animated Water Wave Text Effect</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-
-    <style>
-      body {
-        width: 100%;
-        text-align: center;
-        box-sizing: border-box;
-
-        background: #000;
-      }
-
-      .content {
-        position: relative;
-        width: 100%;
-        left: 50%;
-        font-size: 4rem;
-        text-transform: uppercase;
-      }
-
-      .content h1 {
-        position: absolute;
-        transform: translate(-50%, -50%);
-        font-size: 1em;
-      }
-
-      .content h1:nth-child(1) {
-        color: transparent;
-        -webkit-text-stroke: 2px #03a9f4;
-      }
-
-      .content h1:nth-child(2) {
-        color: #03a9f4;
-        animation: animate 5s ease-in-out infinite;
-      }
-
-      @keyframes animate {
-        0%,
-        100% {
-          clip-path: polygon(0% 45%, 15% 44%, 32% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
-        }
-        50% {
-          clip-path: polygon(0 60%, 16% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 40%, 100% 100%, 0% 100%);
-        }
-      }
-    </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
   </head>
   <body>
-    <div class="content">
-      <h1>Thắp sáng đèn trên biển</h1>
-      <h1>Thăp sáng đèn trên biển</h1>
-    </div>
+    <svg id="svg" width="500" height="500" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+      <g
+        class="highcharts-button highcharts-map-navigation highcharts-zoom-in active"
+        style="cursor: pointer"
+        data-z-index="5"
+        transform="translate(331,10)"
+      >
+        <title>Zoom in</title>
+        <path
+          fill="#f7f7f7"
+          class="highcharts-button-box"
+          d="M 1.5 -0.5 L 25.5 -0.5 C 26.5 -0.5 27.5 0.5 27.5 1.5 L 27.5 27.5 C 27.5 27.5 27.5 27.5 27.5 27.5 L -0.5 27.5 C -0.5 27.5 -0.5 27.5 -0.5 27.5 L -0.5 1.5 C -0.5 0.5 0.5 -0.5 1.5 -0.5 Z"
+          stroke="#cccccc"
+          stroke-width="1"
+        ></path>
+        <text x="9.037499904632568" data-z-index="1" y="19" style="color: #333333; font-size: 15px; font-weight: bold; fill: #333333">
+          +
+        </text>
+      </g>
+      <g
+        class="highcharts-button highcharts-map-navigation highcharts-zoom-out"
+        style="cursor: pointer"
+        data-z-index="5"
+        transform="translate(331,38)"
+      >
+        <title>Zoom out</title>
+        <path
+          fill="#f7f7f7"
+          class="highcharts-button-box"
+          d="M -0.5 -0.5 L 27.5 -0.5 C 27.5 -0.5 27.5 -0.5 27.5 -0.5 L 27.5 25.5 C 27.5 26.5 26.5 27.5 25.5 27.5 L 1.5 27.5 C 0.5 27.5 -0.5 26.5 -0.5 25.5 L -0.5 -0.5 C -0.5 -0.5 -0.5 -0.5 -0.5 -0.5 Z"
+          stroke="#cccccc"
+          stroke-width="1"
+        ></path>
+        <text x="9.262499809265137" data-z-index="1" y="19" style="color: #333333; font-size: 15px; font-weight: bold; fill: #333333">
+          -
+        </text>
+      </g>
+    </svg>
   </body>
 </html>
