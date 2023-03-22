@@ -5,81 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style>
-      #mapvietnam g {
-        transition: 0.3s;
-      }
-      #mapvietnam g:hover {
-        fill: hsl(120, 55%, 40%);
-        cursor: pointer;
-      }
-      .active,
-      .active:hover {
-        fill: hsl(240, 55%, 40%) !important;
-      }
-      #provinceInfo {
-        position: absolute;
-        opacity: 1;
-      }
-      #provinceInfo.show::after {
-        position: relative;
-      }
-
-      .box-total {
-        width: 300px;
-        min-height: 180px;
-        border-radius: 10px;
-        background: rgb(255, 255, 255);
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-      }
-      .box-total .title {
-        border-radius: 10px;
-      }
-
-      .box-total .dest-text {
-        min-height: 145px;
-      }
-
-      #provinceInfo .title h3 {
-        background: #333;
-        padding: 20px;
-
-        color: #fff;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-      }
-
-      #provinceInfo p {
-        margin-left: 2rem;
-        margin-right: 2rem;
-      }
-      #provinceInfo p a {
-        text-decoration: none;
-        color: #017ec6;
-        border-radius: 5px;
-        border: 1px solid #33333317;
-        padding: 5px;
-      }
-      @media all and (max-width: 800px) {
-        #provinceInfo {
-          width: 40%;
-        }
-      }
-      @media all and (max-width: 750px) {
-        #provinceInfo {
-          width: 100%;
-          position: static;
-          background: none;
-        }
-        #provinceInfo.show p {
-          color: #000 !important;
-          margin-bottom: 2rem;
-        }
-      }
-      #provinceInfo.show {
-        opacity: 1;
-      }
-    </style>
   </head>
   <body>
     <svg
@@ -92,7 +17,7 @@
       viewBox="0 0 369 630"
       id="mapvietnam"
     >
-      <desc>Created with Highcharts 9.0.0</desc>
+      <desc>Map Viet Nam</desc>
       <defs>
         <clipPath id="highcharts-ad44a3s-1-"><rect x="0" y="0" width="349" height="605" fill="none"></rect></clipPath>
       </defs>
@@ -474,7 +399,7 @@
                 class="highcharts-point highcharts-color-5 highcharts-name-vĩnh-phúc highcharts-key-26"
               ></path>
             </g>
-            <g id="gialai">
+            <g id="gialai" class="">
               <title>Gia Lai</title>
 
               <path
@@ -535,7 +460,7 @@
                 class="highcharts-point highcharts-color-3 highcharts-name-hậu-giang highcharts-key-93"
               ></path>
             </g>
-            <g id="binhdinh">
+            <g id="binhdinh" class="">
               <title>Bình Định</title>
 
               <path
@@ -583,7 +508,7 @@
                 class="highcharts-point highcharts-color-5 highcharts-name-nghệ-an highcharts-key-40"
               ></path>
             </g>
-            <g id="soctrang">
+            <g id="soctrang" class="active">
               <title>Sóc Trăng</title>
 
               <path
@@ -658,11 +583,9 @@
             <g id="binhthuan">
               <title>Bình Thuận</title>
               <desc>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, esse. Lorem ipsum dolor, sit amet consectetur
-                  adipisicing elit. Vero, incidunt!
-                </p>
-                <p>- 150 phần quà tặng ngư dân</p>
+                <p>Tại tỉnh Bình Thuận trao tặng:</p>
+                <p>- 150 bộ sách cẩm nang trên biển</p>
+                <p>- 5 bình ác quy</p>
                 <p style="text-align: center; padding: 10px 0px"><a href="timkiem.html">Xem chi tiết</a></p>
               </desc>
               <path
@@ -785,11 +708,9 @@
             <g id="khanhhoa">
               <title>Khánh Hòa</title>
               <desc>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, esse. Lorem ipsum dolor, sit amet consectetur
-                  adipisicing elit. Vero, incidunt!
-                </p>
-                <p>- 150 phần quà tặng ngư dân</p>
+                <p>Tại tỉnh Khánh Hòa trao tặng:</p>
+                <p>- 150 bộ sách cẩm nang trên biển</p>
+                <p>- 5 bình ác quy</p>
                 <p style="text-align: center; padding: 10px 0px"><a href="timkiem.html">Xem chi tiết</a></p>
               </desc>
               <path
@@ -841,11 +762,9 @@
             <g id="longan">
               <title>Long An</title>
               <desc>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, esse. Lorem ipsum dolor, sit amet consectetur
-                  adipisicing elit. Vero, incidunt!
-                </p>
-                <p>- 150 phần quà tặng ngư dân</p>
+                <p>Tại tỉnh Bình Thuận trao tặng:</p>
+                <p>- 150 bộ sách cẩm nang trên biển</p>
+                <p>- 5 bình ác quy</p>
                 <p style="text-align: center; padding: 10px 0px"><a href="timkiem.html">Xem chi tiết</a></p>
               </desc>
               <path
@@ -990,46 +909,5 @@
         </text>
       </g>
     </svg>
-    <div id="provinceInfo"></div>
-    <script>
-      const mapvietnam = document.getElementById('mapvietnam'),
-        provinceInfo = document.getElementById('provinceInfo'),
-        allProvinces = mapvietnam.querySelectorAll('g')
-
-      mapvietnam.addEventListener('mouseover', function (e) {
-        const province = e.target.parentNode
-
-        console.log(province)
-        if (e.target.nodeName == 'path') {
-          for (var i = 0; i < allProvinces.length; i++) {
-            allProvinces[i].classList.remove('active')
-          }
-          province.classList.add('active')
-          const provinceName = province.querySelector('title').innerHTML,
-            provincePara = province.querySelector('desc')
-          provinceInfo.style.left = `${e.x - 20}px`
-
-          provinceInfo.style.top = `${e.y - 300}px`
-
-          provinceInfo.innerHTML = ''
-          provinceInfo.insertAdjacentHTML(
-            'afterbegin',
-            '<div class="box-total">' +
-              '<div class="title">' +
-              '<h3>' +
-              provinceName +
-              '</h3>' +
-              '</div>' +
-              '<div class="dest-text">' +
-              ' <p>' +
-              provincePara.innerHTML +
-              '</p>' +
-              '</div>' +
-              '</div>'
-          )
-          provinceInfo.classList.add('show')
-        }
-      })
-    </script>
   </body>
 </html>
