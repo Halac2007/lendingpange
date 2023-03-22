@@ -87,8 +87,8 @@ const mapvietnam = document.getElementById('mapvietnam'),
 
 mapvietnam.addEventListener('mouseover', function (e) {
   const province = e.target.parentNode
-
-  console.log(province)
+  console.log(e)
+  // console.log(province)
   if (e.target.nodeName == 'path') {
     for (var i = 0; i < allProvinces.length; i++) {
       allProvinces[i].classList.remove('active')
@@ -98,7 +98,7 @@ mapvietnam.addEventListener('mouseover', function (e) {
       provincePara = province.querySelector('desc')
     provinceInfo.style.left = `${e.x - 180}px`
 
-    provinceInfo.style.top = `${e.y - 50}px`
+    provinceInfo.style.top = `${e.y - 230}px`
 
     provinceInfo.innerHTML = ''
     provinceInfo.insertAdjacentHTML(
